@@ -29,17 +29,5 @@ public class Carro extends Veiculo{
     public double calcularIpva(double valor){
         return valor * 0.035;
     }
-    @Override
-    public String toString(){
-        return "\n DADOS DO VEÍCULO \n"
-                +"\nplaca: " + getPlaca()
-                +"\nmarca: " + getMarca()
-                +"\nmodelo " + getModelo()
-                +"\nano: " + getAno()
-                +"\n"+getNumPortas() + " Portas"
-                +"\nvalor: " + getValor()
-                +"\nIPVA: " + calcularIpva(getValor());
-        
-    }
-
+   
 }
