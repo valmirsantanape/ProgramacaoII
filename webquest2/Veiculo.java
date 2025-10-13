@@ -5,8 +5,6 @@ public class Veiculo {
     private int ano;
     private double valor;
 
-    
-
     public Veiculo(){
 
     }
@@ -26,8 +24,6 @@ public class Veiculo {
     public void setPlaca(String placa){
         this.placa = placa;
     }
-    
-
 
     public String getMarca() {
         return marca;
@@ -66,7 +62,14 @@ public class Veiculo {
         
     }
 
-    
+    public void exibirInformacoes() {
+        System.out.println("Placa: " + placa);
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Ano: " + ano);
+        System.out.println("Valor: R$ " + valor);
+        System.out.println("IPVA: R$ " + calcularIpva());
+    }
     
 
 
