@@ -20,15 +20,4 @@ public class Moto extends Veiculo{
     public double calcularIpva(double valor) {
         return valor * 0.025;
     }
-    @Override
-    public String toString(){
-        return "*VEICULO CADASTRADO* \n"
-        +"\nplaca: " + getPlaca()
-        +"\nmarca: " + getMarca()
-        +"\nmodelo: " + getModelo()
-        +"\nano: " +  getAno()
-        +"\nvalor: " + getValor()
-        +"\n" + getCilindrada() + "\nCilindradas: " 
-        +"\nIPVA Anual: " + calcularIpva(getValor());
-    }
 }
