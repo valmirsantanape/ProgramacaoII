@@ -24,16 +24,5 @@ public class Caminhao extends Veiculo {
         }
         
     }
-    @Override
-    public String toString(){
-        return "\n DADOS DO VEÍCULO \n"
-                +"\nplaca: " + getPlaca()
-                +"\nmarca: " + getMarca()
-                +"\nmodelo " + getModelo()
-                +"\nano: " + getAno()
-                +"\n"+" Capacidade de carga" + getCapacidadeCarga() + " toneladas"
-                +"\nvalor: " + getValor()
-                +"\nIPVA: " + calcularIpva(getValor());
-    }
-    
+  
 }
