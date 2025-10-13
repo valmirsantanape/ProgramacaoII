@@ -1,4 +1,4 @@
-import java.util.Locale;
+
 import java.util.Scanner;
 
 public class Concessionaria {
@@ -16,9 +16,11 @@ public class Concessionaria {
         double valor;
         int numPortas;
         int cilindradas;
+        double capacidadeCarga;
        
         Carro[] carro = new Carro[3];
-        System.out.println("*CADASTRO DE CARRO*\n");
+        System.out.println("*\nCADASTRO DE CARRO*\n");
+        
         for (int i = 1; i < carro.length + 1; i++) {
                     System.out.printf("Castastre o %dº Carro\n", i);
                     
@@ -42,14 +44,12 @@ public class Concessionaria {
                     
                     carro[i] = new Carro( placa, marca, modelo, ano, valor, numPortas);
                     System.out.println();
-                    System.out.printf(carro[i].toString()) ;
-                    
-                   
-            
         }
+        System.out.printf(carro.toString()) ;
     
+
         Moto[] moto = new Moto[2];
-        System.out.println("CADASTRO DE MOTOS");
+        System.out.println("\nCADASTRO DE MOTOS");
         
         for (int i = 1; i < moto.length + 1; i++) {
             
@@ -76,46 +76,32 @@ public class Concessionaria {
                     System.out.println();
                     
         }
-    
-        
-        }
+        System.out.println(moto.toString());
 
+        
+        Caminhao[] caminhao = new Caminhao[1];
+        System.out.println("*\nCADASTRO DE CAMINHÃO*\n");
+       
+        for(int  i = 1; i <= caminhao.length + 1; i++){
+            System.out.print("Placa: ");
+            placa = sc.next();
+            System.out.print("Marca: ");
+            marca = sc.next();
+            System.out.print("Modelo: ");
+            modelo = sc.next();
+            System.out.print("Ano: ");
+            ano = sc.nextInt();
+            System.out.print("Valor: ");
+            valor = sc.nextDouble();
+            System.out.print("Capacidade de carga: ");
+            capacidadeCarga = sc.nextDouble();
+
+            caminhao[i]  = new Caminhao(placa, marca, modelo, ano, valor, capacidadeCarga);
+        }
+        System.out.println(caminhao.toString());
+        sc.close();
         
     }
 
-    
-    
         
-        
-       
-        
-        
-        
-        /* 
-        moto1.setMarca(marca);
-        moto1.setModelo(modelo);
-        moto1.setPlaca(placa);
-        moto1.setAno(ano);
-        moto1.setValor(valor);
-        moto1.setCilindrada(cilindradas);
-
-    System.out.println("CARRO: ");
-    System.out.println(carro1.getMarca());
-    System.out.println(carro1.getModelo());
-    System.out.println(carro1.getPlaca());
-    System.out.println(carro1.getAno());
-    System.out.println(df.format(carro1.getValor()));
-    System.out.println(carro1.getNumPortas());
-    
-    
-    System.out.println();
-    System.out.println("MOTO: ");
-    System.out.println(moto1.getMarca());
-    System.out.println(moto1.getModelo());
-    System.out.println(moto1.getPlaca());
-    System.out.println(moto1.getAno());
-    System.out.println(df.format(moto1.getValor()));
-    System.out.println(moto1.getCilindrada());
-     */
-
-
+}
