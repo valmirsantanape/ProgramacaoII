@@ -57,9 +57,8 @@ public class Veiculo {
         this.valor = valor;
     }
    
-    public double calcularIpva(double valor) {
+     public double calcularIpva() {
         return valor * 0.04;
-        
     }
 
     public void exibirInformacoes() {
