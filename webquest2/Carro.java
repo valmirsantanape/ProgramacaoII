@@ -29,5 +29,12 @@ public class Carro extends Veiculo{
     public double calcularIpva(double valor){
         return valor * 0.035;
     }
+
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+        System.out.println("Número de portas(carro): " + numeroPortas);
+        System.out.println("IPVA (carro): R$ " + calcularIpva());
+    }
    
 }
