@@ -18,7 +18,7 @@ public class Moto extends Veiculo{
 
     @Override
     public double calcularIpva() {
-        return getValor * 0.025;
+        return getValor() * 0.025;
     }
 
     @Override
