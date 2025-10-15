@@ -29,7 +29,6 @@ public class Caminhao extends Veiculo {
     public void exibirInformacoes() {
         super.exibirInformacoes();
         System.out.println("Capacidade da carga(caminhão): " + capacidadeCarga + " toneladas");
-        System.out.println("IPVA (caminhão): R$ " + calcularIpva());
     }
   
 }
