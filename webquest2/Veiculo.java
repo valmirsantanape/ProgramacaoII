@@ -67,7 +67,7 @@ public class Veiculo {
         System.out.println("Modelo: " + modelo);
         System.out.println("Ano: " + ano);
         System.out.println("Valor: R$ " + valor);
-        System.out.println("IPVA: R$ %.2f%n" + calcularIpva());
+        System.out.printf("IPVA: R$ %.2f%n", calcularIpva());
     }
     
 
