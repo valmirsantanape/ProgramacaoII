@@ -16,13 +16,20 @@ public class Caminhao extends Veiculo {
         this.capacidadeCarga = capacidadeCarga;
     }
     @Override
-    public double calcularIpva(double valor){
+    public double calcularIpva(){
         if (getCapacidadeCarga() <= 5) {
-            return valor * 0.02;
+            return getValor * 0.02;
         }else{
-            return valor * 0.03;
+            return getValor * 0.03;
         }
         
+    }
+
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes();
+        System.out.println("Capacidade da carga(caminhão): " + capacidadeCarga);
+        System.out.println("IPVA (caminhão): R$ " + calcularIpva());
     }
   
 }
