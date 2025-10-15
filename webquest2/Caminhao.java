@@ -18,9 +18,9 @@ public class Caminhao extends Veiculo {
     @Override
     public double calcularIpva(){
         if (getCapacidadeCarga() <= 5) {
-            return getValor * 0.02;
+            return getValor() * 0.02;
         }else{
-            return getValor * 0.03;
+            return getValor() * 0.03;
         }
         
     }
