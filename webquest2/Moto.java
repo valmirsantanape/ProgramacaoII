@@ -23,8 +23,8 @@ public class Moto extends Veiculo{
 
     @Override
     public void exibirInformacoes() {
-        super.exibirInformacoes(); // exibe os dados de Veiculo
-        System.out.println("Cilindradas(moto): " + cilindradas);
+        super.exibirInformacoes(); 
+        System.out.println("Cilindradas(moto): " + cilindrada);
         System.out.println("IPVA (moto): R$ " + calcularIpva());
     }
 }
