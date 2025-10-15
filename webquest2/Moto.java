@@ -17,7 +17,14 @@ public class Moto extends Veiculo{
     }
 
     @Override
-    public double calcularIpva(double valor) {
-        return valor * 0.025;
+    public double calcularIpva() {
+        return getValor * 0.025;
+    }
+
+    @Override
+    public void exibirInformacoes() {
+        super.exibirInformacoes(); // exibe os dados de Veiculo
+        System.out.println("Cilindradas(moto): " + cilindradas);
+        System.out.println("IPVA (moto): R$ " + calcularIpva());
     }
 }
