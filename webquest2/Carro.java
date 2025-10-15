@@ -1,6 +1,5 @@
 
-public class Carro extends Veiculo{
-    
+public class Carro extends Veiculo{    
     
     private int numPortas;
 
@@ -34,7 +33,6 @@ public class Carro extends Veiculo{
     public void exibirInformacoes() {
         super.exibirInformacoes();
         System.out.println("Número de portas(carro): " + numPortas);
-        System.out.println("IPVA (carro): R$ " + calcularIpva());
     }
    
 }
