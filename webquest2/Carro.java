@@ -33,7 +33,7 @@ public class Carro extends Veiculo{
     @Override
     public void exibirInformacoes() {
         super.exibirInformacoes();
-        System.out.println("Número de portas(carro): " + numeroPortas);
+        System.out.println("Número de portas(carro): " + numPortas);
         System.out.println("IPVA (carro): R$ " + calcularIpva());
     }
    
