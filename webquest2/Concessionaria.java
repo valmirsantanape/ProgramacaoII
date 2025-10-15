@@ -16,6 +16,7 @@ public class Concessionaria {
 
         System.out.println("===== LISTA DE VEÍCULOS CADASTRADOS =====\n");
         for (Veiculo v : veiculos) {
+            System.out.println("Tipo de veículo: " + v.getClass().getSimpleName());
             v.exibirInformacoes();
             System.out.println("----------------------------");
         }
